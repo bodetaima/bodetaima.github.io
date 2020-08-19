@@ -29,7 +29,7 @@ Nhắc tới plugins, có thể kể đến như:
 
 Một tính năng mà không những ai cũng muốn, mà còn ai cũng cần. Bạn có thể không tin, những có tính năng này, bạn tiết kiệm được hàng ngàn phút cuộc đời. Và Fish làm nó rất tốt, "out-of-the-box".
 
-(anh-syntax-highlighting)
+![fish-syntax-highlighting](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish-syntax-highlighting.png)
 
 Và nếu như bạn chưa biết, Fish hỗ trợ 24-bit true color terminal. "Out-of-the-box". Điều đó có nghĩa là, bạn có hơn 3 cái cầu vồng trong tay :D
 
@@ -41,13 +41,13 @@ Ngoài ra fish cung cấp 1 web-based configuration, với command:
 `$ fish_config`
 Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của bạn.
 
-(anh-web-config)
+![web-config](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/web_config.png)
 
 #### Inline searchable history
 
 Đây là một tính năng tương tác của Fish. Ví dụ đơn giản thế này, bạn nhập vào command `docker`, sau đó bấm phím Lên hoăc Xuống, Fish sẽ giúp bạn tìm được lịch sử những command bạn đã từng nhập với command `docker`. Như này:
 
-(inline-search)
+![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/inline-search.png)
 
 Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, và cũng như highlight những kết quả tìm thấy.
 
@@ -57,13 +57,13 @@ Tính năng này chắc chắn sẽ tiết kiệm thời gian cho bạn, rất n
 
 Giống như [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), Fish cũng sẵn có một tính năng như vậy. "Out-of-the-box". Cách sử dụng và tính năng có thể sẽ quen thuộc với bạn khi chuyển từ Zsh sang. Rất thông minh.
 
-(auto-suggesstions)
+![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/auto-sugestions.png)
 
 #### Tab completion sử dụng dữ liệu từ man page
 
 Thôi không cần trình bày về tính năng này nữa, nó quá tuyệt vời rồi. Tiết kiệm thời gian tra cứu documents cho bạn.
 
-(tab-completion)
+![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/tab-completion.png)
 
 ### Hai chữ "tuy nhiên"
 
