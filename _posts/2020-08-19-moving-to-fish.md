@@ -53,7 +53,7 @@ Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của b�
 
 Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, cũng như highlight những kết quả tìm thấy.
 
-Tính năng này chắc chắn sẽ tiết kiệm thời gian cho bạn, rất nhiều. Mặc dù đã nói câu này nhiều lần, nhưng phải nói rằng, đây vẫn là một tính năng sẵn có của Fish. "Out-of-the-box".
+Tính năng này chắc chắn sẽ tiết kiệm rất nhiều thời gian, rất nhiều.
 
 #### Inline auto-suggestion
 
