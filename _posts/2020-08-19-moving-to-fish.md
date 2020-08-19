@@ -7,11 +7,9 @@ categories: [shell, fish]
 
 ![fish-logo](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish_logo.png)
 
-Có một sự thật, dù muốn hay không, bạn vẫn sẽ phải làm việc với hệ điều hành có nhân Unix hoặc Unix-like (Linux-based) như MacOS, Ubuntu,...Chúng mạnh mẽ, ổn định, hiệu quả, có thể tùy biến một cách vạn hóa. Và chúng có Unix Shell. Dù muốn hay không, dù sớm hay muộn, bạn sẽ yêu chúng.
+Trong suốt một năm trở lại đây, mình là người dùng quen thuộc với Zsh. Bất kể bộ máy chạy Unix nào mình làm việc cùng, chắc chắn nó sẽ có Zsh. Zsh có rất nhiều tính năng, đa dạng về mặt hình thức và khả năng tùy biến thì tuyệt vời. Thậm chí nó còn được cộng đồng ưu ái phát triển cho hẳn một framework ([oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)), một plugin manager ([antigen](https://github.com/zsh-users/antigen)) và vô số plugin hay ho và hữu dụng. Apple đã sử dụng chính thức sử dụng Zsh làm shell mặc định cho các phiên bản MacOS từ Catalina trở đi. Nhưng việc phát triển Zsh ecosystems là không đồng nhất, đôi khi gây ra sự chậm chạp và nặng nề cho Zsh, dù đã có rất nhiều cố gắng từ cộng đồng để cải thiện hệ sinh thái này.
 
-Trong suốt một năm trở lại đây, mình là người dùng quen thuộc với Zsh. Bất kể bộ máy chạy Unix nào mình làm việc cùng, chắc chắn nó sẽ có Zsh. Zsh có rất nhiều tính năng, đa dạng về mặt hình thức và khả năng tùy biến thì tuyệt vời. Thậm chí nó còn được cộng đồng ưu ái phát triển cho hẳn một framework ([oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)), một plugin manager ([antigen](https://github.com/zsh-users/antigen)) và vô số plugin hay ho và hữu dụng. Thậm chí với MacOS Catalina, Apple đã sử dụng Zsh làm shell mặc định. Nhưng việc phát triển Zsh ecosystems là không đồng nhất, đôi khi gây ra sự chậm chạp và nặng nề cho Zsh, dù đã có rất nhiều cố gắng từ cộng đồng để cải thiện hệ sinh thái này.
-
-Nhiều developer đã đưa ra những giải pháp cải thiện tốc độ cho Zsh, ví dụ như [giải pháp đẩy nhanh tốc độ pasting khi sử dụng zsh-autosuggestions](https://thienkphan.com/posts/06012019/faster-pasting-with-zsh-auto-suggestions-on.html) của một người bạn của mình. Hoàn toàn ổn và ngon lành. Nhưng với mình, mọi thứ nên được "work out-of-the-box", tiết kiệm thời gian setup hệ thống cho mỗi lần làm việc, giúp mình có thể tập trung phát triển hơn.
+Nhiều developer đã đưa ra những giải pháp cải thiện tốc độ cho Zsh khi sử dụng với các plugins, ví dụ như [giải pháp đẩy nhanh tốc độ pasting khi sử dụng zsh-autosuggestions](https://thienkphan.com/posts/06012019/faster-pasting-with-zsh-auto-suggestions-on.html) của một người bạn của mình. Hoàn toàn ổn và ngon lành. Nhưng với mình, mọi thứ nên vận hành tốt "out-of-the-box", tiết kiệm thời gian setup hệ thống, giúp mình có thể tập trung vào các tác vụ phát triển hơn.
 
 Vì thế, sau hơn 1 năm gắn bó, mình tới với Fish.
 
@@ -29,51 +27,55 @@ Nhắc tới plugins, có thể kể đến như:
 
 #### Syntax Highlighting
 
-Một tính năng mà không những ai cũng muốn, mà còn ai cũng cần. Bạn có thể không tin, những có tính năng này, bạn tiết kiệm được hàng ngàn phút cuộc đời. Và Fish làm nó rất tốt, "out-of-the-box".
+Phải thú thật, không một developer nào có thể sống mà thiếu đi tính năng quan trọng này. Chúng tiết kiệm cho lập trình viên hàng nghìn giờ đồng hồ khi làm việc với hệ thống. Fish còn góp phần không nhỏ khi đưa tính năng này trực tiếp vào gói phần mềm. Không giống như các shell khác, chúng chỉ được coi là các plugins và quá trình cài đặt chúng cũng rất mất thời gian, và đôi khi là dễ nản.
 
 ![fish-syntax-highlighting](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish-syntax-highlighting.png)
 
-Và nếu như bạn chưa biết, Fish hỗ trợ 24-bit true color terminal. "Out-of-the-box". Điều đó có nghĩa là, bạn có hơn 3 cái cầu vồng trong tay :D
+Và nếu như bạn chưa biết, Fish hỗ trợ 24-bit true color terminal. "Out-of-the-box" :D.
 
 #### Khả năng tùy biến
 
-Fish có một framework được lấy cảm hứng từ Oh My Zsh,...Oh My Fish. [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) được phát triển trở thành một ứng dụng CLI hoàn chỉnh, cung cấp khả năng config, cài đặt plugin,... thông qua command `omf`. Hầu hết mọi thứ bạn cần và muốn làm với Fish, bạn làm với `omf`.
+Fish có một framework được lấy cảm hứng từ Oh My Zsh,...Oh My Fish. [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) được phát triển trở thành một ứng dụng CLI hoàn chỉnh, cung cấp khả năng config, cài đặt plugin,... thông qua command `omf`. Hầu hết mọi thứ bạn cần và muốn làm với Fish, bạn làm với `omf`. Điều này khá tuyệt vời so với những shell khác, chúng dôi khi không dễ dàng và sẵn sàng tới vậy.
 
-Ngoài ra fish cung cấp 1 web-based configuration, với command:
+Ngoài ra fish cung cấp 1 configuration webpage, với command:
+
 `$ fish_config`
-Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của bạn.
+
+Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của bạn với gần như tất cả những lựa chọn tùy biến mà bạn có thể nghĩ đến. Rất tiện lợi mà cũng rất độc đáo.
 
 ![web-config](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/web_config.png)
 
 #### Inline searchable history
 
-Đây là một tính năng tương tác của Fish. Ví dụ đơn giản thế này, bạn nhập vào command `docker`, sau đó bấm phím Lên hoăc Xuống, Fish sẽ giúp bạn tìm được lịch sử những command bạn đã từng nhập với command `docker`. Như này:
+Đây là một tính năng tương tác của Fish. Ví dụ đơn giản thế này, bạn nhập vào command `docker`, sau đó bấm phím Lên hoăc Xuống, Fish sẽ giúp bạn tìm được lịch sử những command bạn đã từng nhập với command `docker` như `docker images`, `docker run...`, hoặc với `apt` thì có thể là `apt update`, `apt upgrade`, v.v. Như này:
 
 ![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/inline-search.png)
 
-Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, và cũng như highlight những kết quả tìm thấy.
+Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, cũng như highlight những kết quả tìm thấy.
 
-Tính năng này chắc chắn sẽ tiết kiệm thời gian cho bạn, rất nhiều.
+Tính năng này chắc chắn sẽ tiết kiệm thời gian cho bạn, rất nhiều. Mặc dù đã nói câu này nhiều lần, nhưng phải nói rằng, đây vẫn là một tính năng sẵn có của Fish. "Out-of-the-box".
 
 #### Inline auto-suggestion
 
-Giống như [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), Fish cũng sẵn có một tính năng như vậy. "Out-of-the-box". Cách sử dụng và tính năng có thể sẽ quen thuộc với bạn khi chuyển từ Zsh sang. Rất thông minh.
+Giống như [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), Fish cũng sẵn có một tính năng như vậy. Cách sử dụng và tính năng có thể sẽ quen thuộc với bạn khi chuyển từ Zsh sang. Rất thông minh.
+
+Có thể nói, đến thời điểm này, khi chuyển dần từ Zsh sang Fish, mình không gặp bất cứ trở ngại gì. Trái lại, Fish còn làm mình ngạc nhiên vì những gì mà nó cung cấp ngay từ ban đầu. Quả nhiên là đàn em nối tiếp những ưu điểm của thế hệ đi trước.
 
 ![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/auto-sugestions.png)
 
 #### Tab completion sử dụng dữ liệu từ man page
 
-Thôi không cần trình bày về tính năng này nữa, nó quá tuyệt vời rồi. Tiết kiệm thời gian tra cứu documents cho bạn.
+Thôi không cần trình bày về tính năng này nữa, nó quá tuyệt vời rồi. Bất cứ một ứng dụng CLI nào đều đi kèm một man page. Các nhân Unix hoặc Unix-like cũng đều luôn cập nhật man-db thường xuyên như một Wikipedia cho chính nó và người sử dụng vậy. Tiết kiệm thời gian tra cứu documents cho bạn, khi giờ đây, mọi thứ chỉ cách bạn một cú Tab.
 
 ![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/tab-completion.png)
 
 ### Hai chữ "tuy nhiên"
 
-Tuy nhiên, Fish lại có những yếu điểm như:
+Tuy nhiên, Fish lại có những yếu điểm mà qua thời gian mình sử dụng cũng như tìm hiểu như:
 
-- Không support history expansion (`!!`): Thi thoảng bạn quên không add sudo vào một command priviledge, `sudo !!` là rất tiện lợi. Tuy nhiên bạn có thể khắc phục với một plugin nhỏ, [bang-bang](https://github.com/oh-my-fish/plugin-bang-bang).
-- Chậm hơn cả Bash: Bash là một shell có tốc độ gần như chậm nhất so với những shell khác. Fish còn chậm hơn. Điều này là dễ hiểu khi Fish cố gắng mang rất nhiều tính năng vào gói phần mềm của mình. Nhưng việc nhanh chậm hơn vài milisecond, đôi khi bạn không thể nhận ra. Bù lại, Fish ecosystems lại được phát triển tập trung và đồng bộ hơn rất nhiều so với các shell khác.
-- Không tương thích và hỗ trợ POSIX. Và Fish cũng không cố gắng để hoàn thiện điều này. Có nghĩa rằng, shell script chạy được ở trên sh, Bash, Zsh không thể chạy trên Fish. Nhưng đó cũng là một trải nghiệm mới, hoặc nếu bạn không muốn, bạn vẫn có thể thêm dòng `#!/usr/bin/env bash` vào đầu file Bash.
+- Không support history expansion (`!!`): Thi thoảng bạn quên không add sudo vào một command priviledge, `sudo !!` là rất tiện lợi. Fish lại không có. Tuy nhiên bạn có thể khắc phục với một plugin nhỏ, [bang-bang](https://github.com/oh-my-fish/plugin-bang-bang).
+- Chậm hơn cả Bash: Bash là một shell có tốc độ gần như chậm nhất so với những shell khác. Fish còn chậm hơn. Điều này là dễ hiểu khi Fish cố gắng mang rất nhiều tính năng vào gói phần mềm của mình. Nhưng việc nhanh chậm hơn vài milisecond, đôi khi bạn không thể nhận ra. Bù lại, Fish ecosystems lại được phát triển tập trung và đồng bộ hơn rất nhiều so với các shell khác. Khiến cho trải nghiệm chung lại cho ra kết quả đáng ngạc nhiên hơn rất nhiều các shell khác.
+- Không tương thích và hỗ trợ POSIX. Và Fish cũng không cố gắng để hoàn thiện điều này. Có nghĩa rằng, shell script chạy được ở trên sh, Bash, Zsh không thể chạy trên Fish. Nhưng đó cũng là một trải nghiệm mới khi bạn có thể học hỏi được rất nhiều và đa dạng hóa kiến thức về systems nói chung cũng như Unix shell nói riêng. Hoặc nếu bạn không có thời gian để thích nghi hoặc đơn giản là không muốn viết lại toàn bộ các file shell script, bạn vẫn có thể thêm dòng `#!/usr/bin/env bash` vào đầu file sh, và mọi thứ vẫn ổn như chưa có chuyện gì xảy ra.
 
 ### Kết luận
 
