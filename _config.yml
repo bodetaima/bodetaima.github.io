@@ -6,7 +6,7 @@ about: I'm a front-end engineer. Mainly adopted vanilla JavaScript, NodeJS along
 google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
-tagarray: ["javascript", "nodejs", "reactjs", "vuejs", "frontend"]
+tagarray: ["JavaScript", "NodeJS", "ReactJS", "VueJS", "Frontend"]
 
 collections:
   project:
