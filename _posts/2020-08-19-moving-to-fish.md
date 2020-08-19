@@ -5,6 +5,8 @@ date:   2020-08-19 15:00:00 +0700
 categories: [shell, fish]
 ---
 
+![fish-logo](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish_logo.png)
+
 Có một sự thật, dù muốn hay không, bạn vẫn sẽ phải làm việc với hệ điều hành có nhân Unix hoặc Unix-like (Linux-based) như MacOS, Ubuntu,...Chúng mạnh mẽ, ổn định, hiệu quả, có thể tùy biến một cách vạn hóa. Và chúng có Unix Shell. Dù muốn hay không, dù sớm hay muộn, bạn sẽ yêu chúng.
 
 Trong suốt một năm trở lại đây, mình là người dùng quen thuộc với Zsh. Bất kể bộ máy chạy Unix nào mình làm việc cùng, chắc chắn nó sẽ có Zsh. Zsh có rất nhiều tính năng, đa dạng về mặt hình thức và khả năng tùy biến thì tuyệt vời. Thậm chí nó còn được cộng đồng ưu ái phát triển cho hẳn một framework ([oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)), một plugin manager ([antigen](https://github.com/zsh-users/antigen)) và vô số plugin hay ho và hữu dụng. Thậm chí với MacOS Catalina, Apple đã sử dụng Zsh làm shell mặc định. Nhưng việc phát triển Zsh ecosystems là không đồng nhất, đôi khi gây ra sự chậm chạp và nặng nề cho Zsh, dù đã có rất nhiều cố gắng từ cộng đồng để cải thiện hệ sinh thái này.
