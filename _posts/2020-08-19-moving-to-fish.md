@@ -49,7 +49,7 @@ Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của b�
 
 Đây là một tính năng tương tác của Fish. Ví dụ đơn giản thế này, bạn nhập vào command `docker`, sau đó bấm phím Lên hoăc Xuống, Fish sẽ giúp bạn tìm được lịch sử những command bạn đã từng nhập với command `docker` như `docker images`, `docker run...`, hoặc với `apt` thì có thể là `apt update`, `apt upgrade`, v.v. Như này:
 
-![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/inline-search.png)
+![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/inline-search.gif)
 
 Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, cũng như highlight những kết quả tìm thấy.
 
