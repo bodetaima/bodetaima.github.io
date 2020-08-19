@@ -2,7 +2,7 @@
 layout: post
 title:  "Moving to Fish"
 date:   2020-08-19 15:00:00 +0700
-categories: [linux, shell, fish]
+categories: [shell, fish]
 ---
 
 Có một sự thật, dù muốn hay không, bạn vẫn sẽ phải làm việc với hệ điều hành có nhân Unix hoặc Unix-like (Linux-based) như MacOS, Ubuntu,...Chúng mạnh mẽ, ổn định, hiệu quả, có thể tùy biến một cách vạn hóa. Và chúng có Unix Shell. Dù muốn hay không, dù sớm hay muộn, bạn sẽ yêu chúng.
