@@ -144,6 +144,12 @@ layout: compress
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
         {{ content }}
+        <footer>
+          &copy; {{ site.author }}
+          {% if site.github %}
+            - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by Jekyll.
+          {% endif %}
+        </footer>
       </div>
       <!-- end /.col-sm-8 -->
     </div>
