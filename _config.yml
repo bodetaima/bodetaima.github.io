@@ -23,9 +23,9 @@ social:
 
 urls:
     - text: Resume
-      url: /resume/
+      url: /resume
     - text: My Projects
-      url: /projects/
+      url: /projects
 
 url: "https://bodetaima.github.io"
 baseurl: ""
