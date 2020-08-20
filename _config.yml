@@ -1,4 +1,5 @@
 # Site settings
+title: "The Fat Stack"
 title_left    : "The "
 title_right   : "Fat Stack" # default: ""
 description   : "Personal tech blog, all about JavaScript and front-end intergrated."
