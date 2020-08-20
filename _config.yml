@@ -4,7 +4,7 @@ title_left    : "The "
 title_right   : "Fat Stack" # default: ""
 description   : "Personal tech blog, all about JavaScript and front-end intergrated."
 keywords      : "javascript, nodejs, reactjs, vuejs, thefatstack, front-end"
-url           : https://thefatstack.com # site url
+url           : https://nervous-ptolemy-3d2203.netlify.app # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
