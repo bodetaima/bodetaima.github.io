@@ -7,6 +7,7 @@ url           : https://thefatstack.com # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 
+github: https://github.com/bodetaima
 google_analytics  : UA-175895906-1
 
 # Build settings
