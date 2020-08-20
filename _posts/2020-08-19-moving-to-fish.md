@@ -5,7 +5,7 @@ date:   2020-08-19
 categories: [shell, fish]
 ---
 
-![fish-logo](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish_logo.png)
+<image alt="fish-logo" src="{{ "/assets/images/fish_logo.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 Trong suốt một năm trở lại đây, mình là người dùng quen thuộc với Zsh. Bất kể bộ máy chạy Unix nào mình làm việc cùng, chắc chắn nó sẽ có Zsh. Zsh có rất nhiều tính năng, đa dạng về mặt hình thức và khả năng tùy biến thì tuyệt vời. Thậm chí nó còn được cộng đồng ưu ái phát triển cho hẳn một framework ([oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)), một plugin manager ([antigen](https://github.com/zsh-users/antigen)) và vô số plugin hay ho và hữu dụng. Apple đã sử dụng chính thức sử dụng Zsh làm shell mặc định cho các phiên bản MacOS từ Catalina trở đi. Nhưng việc phát triển Zsh ecosystems là không đồng nhất, đôi khi gây ra sự chậm chạp và nặng nề cho Zsh, dù đã có rất nhiều cố gắng từ cộng đồng để cải thiện hệ sinh thái này.
 
@@ -29,7 +29,7 @@ Nhắc tới plugins, có thể kể đến như:
 
 Phải thú thật, không một developer nào có thể sống mà thiếu đi tính năng quan trọng này. Chúng tiết kiệm cho lập trình viên hàng nghìn giờ đồng hồ khi làm việc với hệ thống. Fish còn góp phần không nhỏ khi đưa tính năng này trực tiếp vào gói phần mềm. Không giống như các shell khác, chúng chỉ được coi là các plugins và quá trình cài đặt chúng cũng rất mất thời gian, và đôi khi là dễ nản.
 
-![fish-syntax-highlighting](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/fish-syntax-highlighting.png)
+<image alt="fish-syntax-highlighting" src="{{ "/assets/images/fish-syntax-highlighting.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 Và nếu như bạn chưa biết, Fish hỗ trợ 24-bit true color terminal. "Out-of-the-box" :D.
 
@@ -43,13 +43,13 @@ Ngoài ra fish cung cấp 1 configuration webpage, với command:
 
 Trang web config của fish sẽ "hạ cánh" ngay trên trình duyệt của bạn với gần như tất cả những lựa chọn tùy biến mà bạn có thể nghĩ đến. Rất tiện lợi mà cũng rất độc đáo.
 
-![web-config](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/web_config.png)
+<image alt="web_config" src="{{ "/assets/images/web_config.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 #### Inline searchable history
 
 Đây là một tính năng tương tác của Fish. Ví dụ đơn giản thế này, bạn nhập vào command `docker`, sau đó bấm phím Lên hoăc Xuống, Fish sẽ giúp bạn tìm được lịch sử những command bạn đã từng nhập với command `docker` như `docker images`, `docker run...`, hoặc với `apt` thì có thể là `apt update`, `apt upgrade`, v.v. Như này:
 
-![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/inline-search.gif)
+<image alt="inline-search" src="{{ "/assets/images/inline-search.gif" | prepend: site.baseurl | prepend: site.url }}"/>
 
 Fish cũng sẽ tự động xóa các câu lệnh trùng lặp, cũng như highlight những kết quả tìm thấy.
 
@@ -61,13 +61,13 @@ Giống như [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggesti
 
 Có thể nói, đến thời điểm này, khi chuyển dần từ Zsh sang Fish, mình không gặp bất cứ trở ngại gì. Trái lại, Fish còn làm mình ngạc nhiên vì những gì mà nó cung cấp ngay từ ban đầu. Quả nhiên là đàn em nối tiếp những ưu điểm của thế hệ đi trước.
 
-![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/auto-sugestions.png)
+<image alt="auto-suggestions" src="{{ "/assets/images/auto-sugestions.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 #### Tab completion sử dụng dữ liệu từ man page
 
 Thôi không cần trình bày về tính năng này nữa, nó quá tuyệt vời rồi. Bất cứ một ứng dụng CLI nào đều đi kèm một man page. Các nhân Unix hoặc Unix-like cũng đều luôn cập nhật man-db thường xuyên như một Wikipedia cho chính nó và người sử dụng vậy. Tiết kiệm thời gian tra cứu documents cho bạn, khi giờ đây, mọi thứ chỉ cách bạn một cú Tab.
 
-![inline-search](https://raw.githubusercontent.com/bodetaima/bodetaima.github.io/master/static/img/_posts/tab-completion.png)
+<image alt="tab-completion" src="{{ "/assets/images/tab-completion.png" | prepend: site.baseurl | prepend: site.url }}"/>
 
 ### Hai chữ "tuy nhiên"
 
