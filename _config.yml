@@ -1,45 +1,59 @@
-title: Phong Tran
-description: Personal tech blog about JavaScript intergrated.
-author: Phong Tran
-github: https://github.com/bodetaima
-about: I'm a front-end engineer. Mainly adopted vanilla JavaScript, NodeJS along with front-end library like React, Vue,...
-google_analytics: UA-XXXXXXXX-Y
+# Site settings
+title_left    : "The "
+title_right   : "Fat Stack" # default: ""
+description   : "Personal tech blog, all about JavaScript and front-end intergrated."
+keywords      : "javascript, nodejs, reactjs, vuejs, thefatstack, front-end"
+url           : https://thefatstack.com # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
 
-enableTags: true
-tagarray: ["JavaScript", "NodeJS", "ReactJS", "VueJS", "Frontend"]
+google_analytics  : UA-175895906-1
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+# Build settings
+permalink   : /:title/
+markdown    : kramdown
+highlighter : rouge
 
-social:
-    - icon: fa-facebook
-      link: "https://facebook.com/phongisntreal"
-    - icon: fa-linkedin
-      link: "https://www.linkedin.com/in/phong-trung-tran-09285a194/"
-    - icon: fa-github
-      link: "https://github.com/bodetaima"
+source      : ./
+destination : ./_site
 
-urls:
-    - text: Resume
-      url: /resume
-    - text: My Projects
-      url: /projects
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
 
-url: "https://bodetaima.github.io"
-baseurl: ""
-paginate: 20
-per_page: 20
-paginate_path: "/page/:num/"
-markdown: kramdown
+# Author settings
+author:
+  name     : "Phong Tran"
+
 plugins:
+  - jekyll-sitemap
+  - bourbon
   - jekyll-paginate
-  - jekyll-gist
 
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: ['development']
+# navbar pages
+navbar:
+  - slug : resume
+    title: Resume
+  - slug : blog
+    title: Blog
+
+exclude:
+  - "gulp"
+  - "node_modules"
+  - "bower"
+  - "bower_components"
+  - "config.rb"
+  - "src"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - ".rvmrc"
+  - ".rbenv-version"
+  - "package.json"
+  - "gulpfile.js"
+  - "README.md"
+  - "Rakefile"
+  - "changelog.md"
+  - "script"
+  - "vendor"
+  - "thinkspace.gemspec"

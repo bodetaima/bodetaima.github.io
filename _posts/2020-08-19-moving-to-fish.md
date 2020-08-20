@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Moving to Fish"
-date:   2020-08-19 15:00:00 +0700
+date:   2020-08-19
 categories: [shell, fish]
 ---
 
