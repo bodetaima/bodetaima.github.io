@@ -10,8 +10,7 @@ permalink: /resume/
 ### Contact
 - Phone: 0823478590
 - Email: tranphongbb@outlook.com
-- [GitHub](https://github.com/bodetaima)
-- [Website](https://tranphongbb.tech)
+- <a target="blank" href="https://github.com/bodetaima">GitHub</a>
 - Location: Hanoi, Vietnam
 
 ### Summary
