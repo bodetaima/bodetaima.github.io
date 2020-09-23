@@ -24,6 +24,7 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 
 **Back-end**
 - Familiar with a micro-services - distributed database/services architecture, Restful API.
+- Experienced with GraphQL, solving n+1 problems with GraphQL Dataloaders, query/mutation from GraphQL Server/Client to GraphQL Server/Client.
 - Security solutions like JWT, Sessions Authentication, Cookies, and CSRF Attack Script.
 - Worked with various choice of databases from Oracle RDBMS, MySQL to No SQL like Redis, Elasticsearch, MongoDB.
 
@@ -34,6 +35,7 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 - Eliminate the use of redundant and cumbersome projecting applications like create-react-app, vue-cli,...
 - Making snippets, standard utilities for other developers.
 - Writing test with Jest.
+- Working fluently with GraphQL Client and query/mutation data from Server and vice versa.
 - Be able to work with ecosystems of React with react-router, redux (thunk and saga middleware), Next,...Vue with vuex, vue-router, Nuxt, VuePress,...
 - Be able to reverse engineer other web applications with deeply inspecting Chrome/React DevTools and setup proxy, man in the middle solutions.
 - Design and write scalable, simple, and maintainable code.
