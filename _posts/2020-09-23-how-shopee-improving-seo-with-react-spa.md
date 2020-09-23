@@ -71,7 +71,9 @@ Config Babel và Webpack để biên dịch React và bundle resource:
 webpack.config.js
 
 ```javascript
-const path = require('path');module.exports = {
+const path = require('path');
+
+module.exports = {
   entry: {
       client: './src/client.js',
   },
