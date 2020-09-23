@@ -4,6 +4,8 @@ title: Resume
 permalink: /resume/
 ---
 
+[Download as PDF](https://drive.google.com/file/d/1zRSxczZGvftSIiKptc1EP2IM1dwrbfRC/view?usp=sharing)
+
 ## Tran Trung Phong
 *Front-end Developer*
 
@@ -58,7 +60,7 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 Work on a small development team, with less than a dozen developers. That means I've touched every part of the development chain: from end to end. However, it is still an outsourcing company, mainly developing CMS products and tools, ERP, Internal CRM ... as well as APIs for other areas, such as Mobile and Game Gateway.
 In the vast majority of 2019, I mostly worked in back-end development with Java | Spring Boot 2 | Express.
 
-As 2020 comes, I move to full-time front-end development and become the only front-end developer on the team.
+As 2020 comes, I move to full-time front-end development and become the Lead Engineer of the ACareer - A newborn Human Resource and Personal Capacity Testing platform coming out this year.
 
 For all job skills, please find the Skills section.
 
