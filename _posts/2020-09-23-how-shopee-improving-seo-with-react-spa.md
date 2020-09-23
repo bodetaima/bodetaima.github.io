@@ -7,7 +7,7 @@ categories: [react, spa, seo, shopee]
 
 Nếu bạn chưa biết cách hoạt động của Google Bot trong việc tối ưu hóa kết quả tìm kiếm, Server Side Rendering là gì, cũng như bài toán đặt ra cho React Single Page App và cách giải quyết, bạn có thể tham khảo bài viết [Is React SEO-Friendly?](https://rubygarage.org/blog/seo-for-react-websites) hoặc [How to Make React SEO-Friendly: an Extensive SEO Guide](https://yalantis.com/blog/search-engine-optimization-for-react-apps/).
 
-Trở lại với nội dung chính, thời gian này mình đang thiết kế và phát triển kỹ thuật cho một trong những sản phẩm của công ty. Sản phẩm của mình cung cấp một nền tảng cho nhà tuyển dụng, người lao động có khả năng kết nối và chia sẻ thông tin tuyển dụng, từ đó rút ngắn thời gian, chi phí, và tăng tỉ lệ tuyển dụng thành công cho cả hai bên. Ý tương tổng quan giống như Linkedin vậy. Một trong những specs quan trọng chính là bài toán về SEO, khi mà thông tin của nhà tuyển dụng lẫn người lao động có thể dễ dàng tìm kiếm trên các search engine, thậm chí là tối ưu hóa trở thành các kết quả tìm kiếm hàng đầu. Gatsby và Next trở thành các lựa chọn hàng đầu để xử lý bài toán. Và team mình đã chọn Gatsby (vì khá dễ sử dụng và hệ sinh thái tương đối trưởng thành).
+Trở lại với nội dung chính, thời gian này mình đang thiết kế và phát triển kỹ thuật cho một trong những sản phẩm của công ty. Sản phẩm của mình cung cấp một nền tảng cho nhà tuyển dụng, người lao động có khả năng kết nối và chia sẻ thông tin tuyển dụng, từ đó rút ngắn thời gian, chi phí, và tăng tỉ lệ tuyển dụng thành công cho cả hai bên. Ý tương tổng quan giống như Linkedin vậy. Một trong những specs quan trọng chính là bài toán về SEO, khi mà thông tin của nhà tuyển dụng lẫn người lao động có thể dễ dàng tìm kiếm trên các search engine, thậm chí là tối ưu hóa trở thành các kết quả tìm kiếm hàng đầu. Gatsby và Next trở thành các lựa chọn để xử lý bài toán. Và team mình đã chọn Gatsby (vì khá dễ sử dụng và hệ sinh thái tương đối trưởng thành).
 
 Tuy nhiên, Gatsby vẫn có vấn đề. Gatsby thay vì sử dụng Server Side Rendering thuần túy, họ lại sử dụng Static Generation cho bản build production đầu cuối. Điều đó có nghĩa là: các trang tĩnh (static pages) và tài nguyên (resources) của chúng sẽ được tạo ra ở Build Time chứ không phải ở Runtime. Từ đó, việc tạo ra các trang profile, thông tin, thống kê,...liên quan tới user sẽ không được tạo ra một cách dynamically và programmatically.
 
@@ -16,7 +16,7 @@ Tuy nhiên, Gatsby vẫn có vấn đề. Gatsby thay vì sử dụng Server Sid
 1. Tạo ra các template views + khai báo general pathname cho URL dẫn tới các templates đó. Ví dụ như path `/p/*` có thể dẫn tới component ProfilePage, khi đó user có thể request được vào url với path là `/u/<username>`. Logic component đó sẽ lấy username từ URL và request đi để lấy dữ liệu và render ra UI. Các này hoạt động bình thường, nhưng đáng tiếc là cách làm này lại chính là client side rendering, và page source vẫn hoàn toàn trống trơn.
 2. Sử dụng PaaS/SaaS: Có rất nhiều PaaS support Gatsby, tạo ra các Pipelines cho phép build Gatsby ngay trên platform. Cách xử lý vấn đề này khá đơn giản, sử dụng một webhooks của platform đó, mỗi khi người dùng đăng ký, tạo trang profile hoặc tạo các thống kê,...hệ thống sẽ gọi webhooks, trigger rebuild ứng dụng. Tại build time, hệ thống có thể gọi vào API thông qua REST hoặc GraphQL để fetch lại các dữ liệu được sử dụng để tạo ra các static pages, từ đó generate ra các pages mới. Cách này cũng ổn, page source cũng rất đẹp, đáp ứng SEO miễn chê. Tuy nhiên việc rebuild ứng dụng không thực sự hiệu quả và có thể ảnh hưởng tới thời gian đáp ứng của ứng dụng. Mặc dù chỉ rebuild một hoặc vài phần liên quan và có các cache layer, nhưng như thế vẫn là chưa đủ!
 
-Next.js sau đó cũng được cân nhắc với khả năng SSR. Tuy nhiên sau một vài cuộc họp, cùng với việc benchmark các spec liên quan, team mình nhận ra khả năng đáp ứng và performance của Next.js vẫn còn nhiều bất cập. Ngay trong [documentation](https://nextjs.org/docs/basic-features/pages) của Next cũng recommend sử dụng Static Generation và chỉ dùng SSR khi thực sự cần.
+Next.js sau đó cũng được cân nhắc với khả năng SSR. Tuy nhiên sau một vài cuộc họp, cùng với việc benchmark các specs liên quan, team mình nhận ra khả năng đáp ứng và performance của Next.js vẫn còn nhiều bất cập. Ngay trong [documentation](https://nextjs.org/docs/basic-features/pages) của Next cũng recommend sử dụng Static Generation và chỉ dùng SSR khi thực sự cần.
 
 Bài toán lại trở về với Single Page App.
 
@@ -56,7 +56,7 @@ Cho đơn giản thì mình sẽ lấy dữ liệu từ một file [data.json](h
 
 Một app React bình thường có thể tìm thấy trong thư mục [src/app](https://github.com/bodetaima/ssr/tree/master/src/app) của repo.
 
-Redux Store config tại thực mục [src/redux](https://github.com/bodetaima/ssr/tree/master/src/redux).
+Redux Store config tại thư mục [src/redux](https://github.com/bodetaima/ssr/tree/master/src/redux).
 
 Config Babel và Webpack để biên dịch React và bundle resource:
 
