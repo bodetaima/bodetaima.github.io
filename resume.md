@@ -24,27 +24,31 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 
 **Back-end**
 - Familiar with a micro-services - distributed database/services architecture, Restful API.
-- Experienced with GraphQL, solving n+1 problems with GraphQL Dataloaders, query/mutation from GraphQL Server/Client to GraphQL Server/Client.
+- Experienced with GraphQL, GraphQL Dataloaders, query/mutation from GraphQL Server/Client to GraphQL Server/Client.
 - Security solutions like JWT, Sessions Authentication, Cookies, and CSRF Attack Script.
 - Worked with various choice of databases from Oracle RDBMS, MySQL to No SQL like Redis, Elasticsearch, MongoDB.
 
 **Front-end**
-- Vanilla JavaScript and direct DOM Manipulation as long as Server-Side Rendering with Handlebar, Thymeleaf, Apache Tiles.
+- Vanilla JavaScript and direct DOM Manipulation as long as Server-Side Rendering with Handlebar, EJS,...
 - Building boilerplate projects at various technologies for fast and precise workflow.
 - Making hand-crafted Webpack configurations suitable with most popular projects like static web pages, React, Vue,...
-- Eliminate the use of redundant and cumbersome projecting applications like create-react-app, vue-cli,...
+- Eliminate and reproduce the usage and configuration of projecting applications like create-react-app, vue-cli,...
 - Making snippets, standard utilities for other developers.
 - Writing test with Jest.
-- Working fluently with GraphQL Client and query/mutation data from Server and vice versa.
-- Be able to work with ecosystems of React with react-router, redux (thunk and saga middleware), Next,...Vue with vuex, vue-router, Nuxt, VuePress,...
+- Working fluently with GraphQL Client (Apollo,...) and query/mutation data from Server and vice versa.
+- Be able to work with React ecosystems: react-router, redux (thunk and saga middleware), react-helmet, Next, Gatsby,...
+- Be able to work with Vue ecosystems: vuex, vue-router, Nuxt, VuePress,...
+- Proficient at HTML5, CSS3 and its preprocessor like Sass, Less, PostCSS, Stylus,...Using CSS Utilities like TailwindCSS. Familiar with CSS Architechture like BEM,...
+- Responsive design.
+- Can design mock-up and simulate UI/UX with tools like Figma, Adobe XD,...
 - Be able to reverse engineer other web applications with deeply inspecting Chrome/React DevTools and setup proxy, man in the middle solutions.
 - Design and write scalable, simple, and maintainable code.
 - Optimizing build process and release bundles.
-- In charge of front-end training for interns/newcomers. Provide guidelines and conventions for new developers. Directly participate in the recruitment process.
+- In charge of front-end training for interns/newcomers. Provide guidelines and conventions for new developers. Directly participate in the recruitment process. 
 
 **Other skills**
 - Writing Dockerfile, containerize Applications.
-- Writing docker-compose for running multiple containers on/off-network.
+- Writing docker-compose for running multiple containers on/off-network, volumes,...
 - Familiar with Unix shell command and scripting.
 - Familiar with CLI tools.
 - Working fluently with Git VCS. Monitoring tasks through GitHub/GitLab issues & milestones systems.
@@ -68,7 +72,8 @@ For all job skills, please find the Skills section.
 
 Notable products: 
 - Gia Dinh People's Hospital: Mobile application, Website and internal CMS.
-- CVV - E-commerce platform. <a href="http://cvv.com.vn/" target="_blank">http://cvv.com.vn</a>.
+- CVV - E-commerce platform build with Vue. <a href="https://qtq.vn/" target="_blank">https://qtq.vn/</a>.
+- eShip - Shipping app inside CVV ecosystems - build with React Native. <a href="https://apps.apple.com/us/app/eship/id1537218152" target="_blank">App Store</a>
 
 **Gear Inc.** 08/2018 - 06/2019
 
