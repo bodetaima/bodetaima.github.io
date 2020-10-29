@@ -64,16 +64,17 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 *Web Developer*
 
 Work on a small development team, with less than a dozen developers. That means I've touched every part of the development chain: from end to end. However, it is still an outsourcing company, mainly developing CMS products and tools, ERP, Internal CRM ... as well as APIs for other areas, such as Mobile and Game Gateway.
-In the vast majority of 2019, I mostly worked in back-end development with Java | Spring Boot 2 | Express.
 
-As 2020 comes, I move to full-time front-end development and become the Lead Engineer of the ACareer - A newborn Human Resource and Personal Capacity Testing platform coming out this year.
+As 2020 comes, I become the Lead Engineer of the ACareer - A newborn Human Resource and Personal Capacity Testing platform coming out this year. 
 
 For all job skills, please find the Skills section.
 
+Notable products:
 Notable products: 
 - Gia Dinh People's Hospital: Mobile application, Website and internal CMS.
 - CVV - E-commerce platform build with Vue. <a href="https://qtq.vn/" target="_blank">https://qtq.vn/</a>.
 - eShip - Shipping app inside CVV ecosystems - build with React Native. <a href="https://apps.apple.com/us/app/eship/id1537218152" target="_blank">App Store</a>
+- DigitalCareers - An in-development products aiming at the talent acquisition market - Build with React and NextJS ecosystems.
 
 **Gear Inc.** 08/2018 - 06/2019
 
