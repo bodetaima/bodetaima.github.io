@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-[Download as PDF](https://drive.google.com/file/d/1zRSxczZGvftSIiKptc1EP2IM1dwrbfRC/view?usp=sharing)
+<a target="blank" href="https://drive.google.com/file/d/1zRSxczZGvftSIiKptc1EP2IM1dwrbfRC/view?usp=sharing">Download as PDF</a>
 
 ## Tran Trung Phong
 *Front-end Developer*
