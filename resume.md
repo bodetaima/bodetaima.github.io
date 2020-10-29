@@ -56,6 +56,7 @@ Focus on developing high-performance, feature-rich, and efficient web applicatio
 - Experienced with React Native and building mobile app processes.
 - Documentation, training, and review.
 - Being able to express and convey ideas with other developers and teams.
+- English efficient. Be able to read some Hangul (Korean) but not really good.
 
 ### Work Experience
 
